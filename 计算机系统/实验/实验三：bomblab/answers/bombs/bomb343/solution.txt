@@ -1,0 +1,7 @@
+The future will be better tomorrow.
+0 1 1 2 3 5
+4 584
+80 4 DrEvil
+5 115
+4 3 6 2 1 5 
+35

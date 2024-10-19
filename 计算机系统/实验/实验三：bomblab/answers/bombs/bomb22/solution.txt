@@ -1,0 +1,7 @@
+For NASA, space is still a high priority.
+1 2 4 8 16 32
+3 -307
+264 3 DrEvil
+5 115
+1 2 5 4 3 6 
+35

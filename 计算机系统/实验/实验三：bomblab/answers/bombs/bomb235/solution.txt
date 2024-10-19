@@ -1,0 +1,7 @@
+Border relations with Canada have never been better.
+0 1 1 2 3 5
+5 w 256
+80 4 DrEvil
+m63487
+3 6 1 4 5 2 
+35

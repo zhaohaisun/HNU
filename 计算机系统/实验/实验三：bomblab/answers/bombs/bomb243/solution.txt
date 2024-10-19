@@ -1,0 +1,7 @@
+You can Russia from land here in Alaska.
+0 1 1 2 3 5
+3 -121
+5 15 DrEvil
+25l4o7
+3 1 4 5 6 2 
+7

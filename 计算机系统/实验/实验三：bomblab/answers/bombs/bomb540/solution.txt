@@ -1,0 +1,7 @@
+We have to stand with our North Korean allies.
+0 1 1 2 3 5
+3 -580
+8 1 DrEvil
+5 115
+6 5 1 4 2 3 
+1001

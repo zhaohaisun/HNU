@@ -1,0 +1,7 @@
+The moon unit will be divided into two divisions.
+1 2 4 8 16 32
+4 461
+2 4 DrEvil
+4511=:
+6 5 4 3 2 1 
+47

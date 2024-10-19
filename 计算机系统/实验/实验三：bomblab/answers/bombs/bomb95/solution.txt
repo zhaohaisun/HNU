@@ -1,0 +1,7 @@
+When a problem comes along, you must zip it!
+2 3 5 8 12 17
+4 229
+352 4 DrEvil
+5 115
+5 1 6 4 3 2 
+20

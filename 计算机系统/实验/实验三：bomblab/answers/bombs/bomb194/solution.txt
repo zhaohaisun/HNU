@@ -1,0 +1,7 @@
+Public speaking is very easy.
+1 2 4 8 16 32
+4 134
+2 13 DrEvil
+5 115
+5 1 4 6 2 3 
+1001

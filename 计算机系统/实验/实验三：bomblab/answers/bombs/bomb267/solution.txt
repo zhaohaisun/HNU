@@ -1,0 +1,7 @@
+I can see Russia from my house!
+1 2 4 8 16 32
+4 115
+6 6 DrEvil
+5 115
+6 3 2 4 5 1 
+7

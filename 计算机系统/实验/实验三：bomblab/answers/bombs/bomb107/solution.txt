@@ -1,0 +1,7 @@
+I was trying to give Tina Fey more material.
+1 2 4 8 16 32
+4 70
+10 5 DrEvil
+5 115
+4 1 6 3 2 5 
+35

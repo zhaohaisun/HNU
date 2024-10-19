@@ -1,0 +1,7 @@
+I am the mayor. I can do anything I want.
+1 2 4 8 16 32
+4 864
+99 3 DrEvil
+:23<<8
+5 2 3 4 6 1 
+20

@@ -1,0 +1,7 @@
+The moon unit will be divided into two divisions.
+2 3 5 8 12 17
+5 c 693
+264 3 DrEvil
+>=4<=8
+5 1 4 6 2 3 
+1

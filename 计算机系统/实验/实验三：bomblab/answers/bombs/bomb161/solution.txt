@@ -1,0 +1,7 @@
+I am not part of the problem. I am a Republican.
+0 1 1 2 3 5
+3 -230
+60 3 DrEvil
+5 115
+3 6 2 4 1 5 
+40

@@ -1,0 +1,7 @@
+There are rumors on the internets.
+0 1 1 2 3 5
+5 n 528
+6 6 DrEvil
+5 115
+5 2 4 3 1 6 
+47

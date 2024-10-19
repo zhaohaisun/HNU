@@ -1,0 +1,239 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  double a,b,c,disc,x1,x2,realpart,imagpart;
+  printf("请输入方程系数并且以空格作为分隔符： ");
+  scanf("%lf %lf %lf",&a,&b,&c);
+  if(fabs(a)<=1e-6)
+    printf("不是一元二次方程。\n");
+  else
+  {
+    disc=b*b-4*a*c;   //定义判别式
+    if(fabs(disc)<=1e-6)   //如果判别式小于0
+      printf("有两个相同的实根:%8.4f\n",-b/(2*a));
+    else
+      if(disc>1e-6)
+	  {
+       x1=(-b+sqrt(disc))/(2*a);
+       x2=(-b-sqrt(disc))/(2*a);
+       printf("有两个不同的实根:%8.4f and %8.4f\n",x1,x2);
+	  }
+      else
+	  {
+       realpart=-b/(2*a);
+       imagpart=sqrt(-disc)/(2*a);
+       printf(" 有两个复根1:\n");
+       printf("%8.4f+%8.4fi\n",realpart,imagpart);
+       printf("%8.4f-%8.4fi\n",realpart,imagpart);
+	  }
+  }
+  return 0;
+}  
+
+
+main.o:     file format elf32-i386
+
+Contents of section .text:
+ 0000 5589e583 e4f083ec 70b80000 00008904  U.......p.......
+ 0010 24e8fcff ffffb838 0000008d 54244089  $......8....T$@.
+ 0020 54240c8d 54243889 5424088d 54243089  T$..T$8.T$..T$0.
+ 0030 54240489 0424e8fc ffffffdd 442430d9  T$...$......D$0.
+ 0040 e1dd05e0 000000df e9ddd80f 93c084c0  ................
+ 0050 7411c704 24440000 00e8fcff ffffe95f  t...$D........._
+ 0060 010000dd 442438dd 442438de c9dd4424  ....D$8.D$8...D$
+ 0070 30dd05e8 000000de c9dd4424 40dec9de  0.........D$@...
+ 0080 e9dd5c24 48dd4424 48d9e1dd 05e00000  ..\$H.D$H.......
+ 0090 00dfe9dd d80f93c0 84c07424 dd442438  ..........t$.D$8
+ 00a0 d9e0dd44 2430d8c0 def9b860 000000dd  ...D$0.....`....
+ 00b0 5c240489 0424e8fc ffffffe9 02010000  \$...$..........
+ 00c0 dd442448 dd05e000 0000d9c9 dfe9ddd8  .D$H............
+ 00d0 0f97c084 c07479dd 442448d9 fadbe87a  .....ty.D$H....z
+ 00e0 08dbe874 12ddd8eb 02ddd8dd 442448dd  ...t........D$H.
+ 00f0 1c24e8fc ffffffdd 442438de e9dd4424  .$......D$8...D$
+ 0100 30d8c0de f9dd5c24 50dd4424 38d9e0dd  0.....\$P.D$8...
+ 0110 5c2428dd 442448dd 1c24e8fc ffffffdd  \$(.D$H..$......
+ 0120 442428de e1dd4424 30d8c0de f9dd5c24  D$(...D$0.....\$
+ 0130 58b88000 0000dd44 2458dd5c 240cdd44  X......D$X.\$..D
+ 0140 2450dd5c 24048904 24e8fcff ffffeb72  $P.\$...$......r
+ 0150 dd442438 d9e0dd44 2430d8c0 def9dd5c  .D$8...D$0.....\
+ 0160 2460dd44 2448d9e0 dd1c24e8 fcffffff  $`.D$H....$.....
+ 0170 dd442430 d8c0def9 dd5c2468 c70424aa  .D$0.....\$h..$.
+ 0180 000000e8 fcffffff b8bd0000 00dd4424  ..............D$
+ 0190 68dd5c24 0cdd4424 60dd5c24 04890424  h.\$..D$`.\$...$
+ 01a0 e8fcffff ffb8cb00 0000dd44 2468dd5c  ...........D$h.\
+ 01b0 240cdd44 2460dd5c 24048904 24e8fcff  $..D$`.\$...$...
+ 01c0 ffffb800 000000c9 c3                 .........       
+Contents of section .rodata:
+ 0000 e8afb7e8 be93e585 a5e696b9 e7a88be7  ................
+ 0010 b3bbe695 b0e5b9b6 e4b894e4 bba5e7a9  ................
+ 0020 bae6a0bc e4bd9ce4 b8bae588 86e99a94  ................
+ 0030 e7aca6ef bc9a2000 256c6620 256c6620  ...... .%lf %lf 
+ 0040 256c6600 e4b88de6 98afe4b8 80e58583  %lf.............
+ 0050 e4ba8ce6 aca1e696 b9e7a88b e3808200  ................
+ 0060 e69c89e4 b8a4e4b8 aae79bb8 e5908ce7  ................
+ 0070 9a84e5ae 9ee6a0b9 3a25382e 34660a00  ........:%8.4f..
+ 0080 e69c89e4 b8a4e4b8 aae4b88d e5908ce7  ................
+ 0090 9a84e5ae 9ee6a0b9 3a25382e 34662061  ........:%8.4f a
+ 00a0 6e642025 382e3466 0a0020e6 9c89e4b8  nd %8.4f.. .....
+ 00b0 a4e4b8aa e5a48de6 a0b9313a 0025382e  ..........1:.%8.
+ 00c0 34662b25 382e3466 690a0025 382e3466  4f+%8.4fi..%8.4f
+ 00d0 2d25382e 3466690a 00000000 00000000  -%8.4fi.........
+ 00e0 8dedb5a0 f7c6b03e 00000000 00001040  .......>.......@
+Contents of section .comment:
+ 0000 00474343 3a202855 62756e74 752f4c69  .GCC: (Ubuntu/Li
+ 0010 6e61726f 20342e36 2e332d31 7562756e  naro 4.6.3-1ubun
+ 0020 74753529 20342e36 2e3300             tu5) 4.6.3.     
+Contents of section .eh_frame:
+ 0000 14000000 00000000 017a5200 017c0801  .........zR..|..
+ 0010 1b0c0404 88010000 1c000000 1c000000  ................
+ 0020 00000000 c9010000 00410e08 8502420d  .........A....B.
+ 0030 0503c501 c50c0404                    ........        
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	55                   	push   %ebp
+   1:	89 e5                	mov    %esp,%ebp
+   3:	83 e4 f0             	and    $0xfffffff0,%esp
+   6:	83 ec 70             	sub    $0x70,%esp
+   9:	b8 00 00 00 00       	mov    $0x0,%eax
+   e:	89 04 24             	mov    %eax,(%esp)
+  11:	e8 fc ff ff ff       	call   12 <main+0x12>
+  16:	b8 38 00 00 00       	mov    $0x38,%eax
+  1b:	8d 54 24 40          	lea    0x40(%esp),%edx
+  1f:	89 54 24 0c          	mov    %edx,0xc(%esp)
+  23:	8d 54 24 38          	lea    0x38(%esp),%edx
+  27:	89 54 24 08          	mov    %edx,0x8(%esp)
+  2b:	8d 54 24 30          	lea    0x30(%esp),%edx
+  2f:	89 54 24 04          	mov    %edx,0x4(%esp)
+  33:	89 04 24             	mov    %eax,(%esp)
+  36:	e8 fc ff ff ff       	call   37 <main+0x37>
+  3b:	dd 44 24 30          	fldl   0x30(%esp)
+  3f:	d9 e1                	fabs   
+  41:	dd 05 e0 00 00 00    	fldl   0xe0
+  47:	df e9                	fucomip %st(1),%st
+  49:	dd d8                	fstp   %st(0)
+  4b:	0f 93 c0             	setae  %al
+  4e:	84 c0                	test   %al,%al
+  50:	74 11                	je     63 <main+0x63>
+  52:	c7 04 24 44 00 00 00 	movl   $0x44,(%esp)
+  59:	e8 fc ff ff ff       	call   5a <main+0x5a>
+  5e:	e9 5f 01 00 00       	jmp    1c2 <main+0x1c2>
+  63:	dd 44 24 38          	fldl   0x38(%esp)
+  67:	dd 44 24 38          	fldl   0x38(%esp)
+  6b:	de c9                	fmulp  %st,%st(1)
+  6d:	dd 44 24 30          	fldl   0x30(%esp)
+  71:	dd 05 e8 00 00 00    	fldl   0xe8
+  77:	de c9                	fmulp  %st,%st(1)
+  79:	dd 44 24 40          	fldl   0x40(%esp)
+  7d:	de c9                	fmulp  %st,%st(1)
+  7f:	de e9                	fsubrp %st,%st(1)
+  81:	dd 5c 24 48          	fstpl  0x48(%esp)
+  85:	dd 44 24 48          	fldl   0x48(%esp)
+  89:	d9 e1                	fabs   
+  8b:	dd 05 e0 00 00 00    	fldl   0xe0
+  91:	df e9                	fucomip %st(1),%st
+  93:	dd d8                	fstp   %st(0)
+  95:	0f 93 c0             	setae  %al
+  98:	84 c0                	test   %al,%al
+  9a:	74 24                	je     c0 <main+0xc0>
+  9c:	dd 44 24 38          	fldl   0x38(%esp)
+  a0:	d9 e0                	fchs   
+  a2:	dd 44 24 30          	fldl   0x30(%esp)
+  a6:	d8 c0                	fadd   %st(0),%st
+  a8:	de f9                	fdivrp %st,%st(1)
+  aa:	b8 60 00 00 00       	mov    $0x60,%eax
+  af:	dd 5c 24 04          	fstpl  0x4(%esp)
+  b3:	89 04 24             	mov    %eax,(%esp)
+  b6:	e8 fc ff ff ff       	call   b7 <main+0xb7>
+  bb:	e9 02 01 00 00       	jmp    1c2 <main+0x1c2>
+  c0:	dd 44 24 48          	fldl   0x48(%esp)
+  c4:	dd 05 e0 00 00 00    	fldl   0xe0
+  ca:	d9 c9                	fxch   %st(1)
+  cc:	df e9                	fucomip %st(1),%st
+  ce:	dd d8                	fstp   %st(0)
+  d0:	0f 97 c0             	seta   %al
+  d3:	84 c0                	test   %al,%al
+  d5:	74 79                	je     150 <main+0x150>
+  d7:	dd 44 24 48          	fldl   0x48(%esp)
+  db:	d9 fa                	fsqrt  
+  dd:	db e8                	fucomi %st(0),%st
+  df:	7a 08                	jp     e9 <main+0xe9>
+  e1:	db e8                	fucomi %st(0),%st
+  e3:	74 12                	je     f7 <main+0xf7>
+  e5:	dd d8                	fstp   %st(0)
+  e7:	eb 02                	jmp    eb <main+0xeb>
+  e9:	dd d8                	fstp   %st(0)
+  eb:	dd 44 24 48          	fldl   0x48(%esp)
+  ef:	dd 1c 24             	fstpl  (%esp)
+  f2:	e8 fc ff ff ff       	call   f3 <main+0xf3>
+  f7:	dd 44 24 38          	fldl   0x38(%esp)
+  fb:	de e9                	fsubrp %st,%st(1)
+  fd:	dd 44 24 30          	fldl   0x30(%esp)
+ 101:	d8 c0                	fadd   %st(0),%st
+ 103:	de f9                	fdivrp %st,%st(1)
+ 105:	dd 5c 24 50          	fstpl  0x50(%esp)
+ 109:	dd 44 24 38          	fldl   0x38(%esp)
+ 10d:	d9 e0                	fchs   
+ 10f:	dd 5c 24 28          	fstpl  0x28(%esp)
+ 113:	dd 44 24 48          	fldl   0x48(%esp)
+ 117:	dd 1c 24             	fstpl  (%esp)
+ 11a:	e8 fc ff ff ff       	call   11b <main+0x11b>
+ 11f:	dd 44 24 28          	fldl   0x28(%esp)
+ 123:	de e1                	fsubp  %st,%st(1)
+ 125:	dd 44 24 30          	fldl   0x30(%esp)
+ 129:	d8 c0                	fadd   %st(0),%st
+ 12b:	de f9                	fdivrp %st,%st(1)
+ 12d:	dd 5c 24 58          	fstpl  0x58(%esp)
+ 131:	b8 80 00 00 00       	mov    $0x80,%eax
+ 136:	dd 44 24 58          	fldl   0x58(%esp)
+ 13a:	dd 5c 24 0c          	fstpl  0xc(%esp)
+ 13e:	dd 44 24 50          	fldl   0x50(%esp)
+ 142:	dd 5c 24 04          	fstpl  0x4(%esp)
+ 146:	89 04 24             	mov    %eax,(%esp)
+ 149:	e8 fc ff ff ff       	call   14a <main+0x14a>
+ 14e:	eb 72                	jmp    1c2 <main+0x1c2>
+ 150:	dd 44 24 38          	fldl   0x38(%esp)
+ 154:	d9 e0                	fchs   
+ 156:	dd 44 24 30          	fldl   0x30(%esp)
+ 15a:	d8 c0                	fadd   %st(0),%st
+ 15c:	de f9                	fdivrp %st,%st(1)
+ 15e:	dd 5c 24 60          	fstpl  0x60(%esp)
+ 162:	dd 44 24 48          	fldl   0x48(%esp)
+ 166:	d9 e0                	fchs   
+ 168:	dd 1c 24             	fstpl  (%esp)
+ 16b:	e8 fc ff ff ff       	call   16c <main+0x16c>
+ 170:	dd 44 24 30          	fldl   0x30(%esp)
+ 174:	d8 c0                	fadd   %st(0),%st
+ 176:	de f9                	fdivrp %st,%st(1)
+ 178:	dd 5c 24 68          	fstpl  0x68(%esp)
+ 17c:	c7 04 24 aa 00 00 00 	movl   $0xaa,(%esp)
+ 183:	e8 fc ff ff ff       	call   184 <main+0x184>
+ 188:	b8 bd 00 00 00       	mov    $0xbd,%eax
+ 18d:	dd 44 24 68          	fldl   0x68(%esp)
+ 191:	dd 5c 24 0c          	fstpl  0xc(%esp)
+ 195:	dd 44 24 60          	fldl   0x60(%esp)
+ 199:	dd 5c 24 04          	fstpl  0x4(%esp)
+ 19d:	89 04 24             	mov    %eax,(%esp)
+ 1a0:	e8 fc ff ff ff       	call   1a1 <main+0x1a1>
+ 1a5:	b8 cb 00 00 00       	mov    $0xcb,%eax
+ 1aa:	dd 44 24 68          	fldl   0x68(%esp)
+ 1ae:	dd 5c 24 0c          	fstpl  0xc(%esp)
+ 1b2:	dd 44 24 60          	fldl   0x60(%esp)
+ 1b6:	dd 5c 24 04          	fstpl  0x4(%esp)
+ 1ba:	89 04 24             	mov    %eax,(%esp)
+ 1bd:	e8 fc ff ff ff       	call   1be <main+0x1be>
+ 1c2:	b8 00 00 00 00       	mov    $0x0,%eax
+ 1c7:	c9                   	leave  
+ 1c8:	c3                   	ret    
+
+#include <stdio.h>
+int main()
+{
+	int a[5]={85,116,36,116,121};
+	printf("%d\n", sizeof(int));
+	printf("%s%s%s%s%s\n",&a[0],&a[1],&a[2],&a[3],&a[4]);
+	return 0;
+}
+
